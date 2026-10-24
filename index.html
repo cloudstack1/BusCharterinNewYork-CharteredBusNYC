@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bus Charter in New York, NY | Chartered Bus NYC</title>
+    <meta name="description" content="Explore bus charter and group transportation options in New York, NY, for field trips, weddings, proms, sports teams, and special events with Chartered Bus NYC.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 110px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222222;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #0000AA;
+        }
+
+        /* Fixed Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 90px;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            min-height: 90px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo img {
+            display: block;
+            width: 165px;
+            max-height: 65px;
+            object-fit: contain;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 125px 24px 50px;
+        }
+
+        .hero {
+            padding: 35px 0 25px;
+            border-bottom: 1px solid #e8e8e8;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 4vw, 43px);
+            line-height: 1.25;
+            color: #171717;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #444444;
+        }
+
+        section {
+            margin: 35px 0;
+        }
+
+        h2 {
+            color: #171717;
+            font-size: 27px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #222222;
+            font-size: 21px;
+            line-height: 1.5;
+            margin: 22px 0 8px;
+        }
+
+        p {
+            margin-bottom: 17px;
+        }
+
+        ul {
+            margin: 12px 0 20px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 4px;
+        }
+
+        .video-wrapper,
+        .map-wrapper,
+        .blog-wrapper {
+            width: 100%;
+            margin: 25px 0 35px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background: #f3f3f3;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .map-wrapper iframe {
+            display: block;
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+
+        .blog-wrapper iframe {
+            display: block;
+            width: 100%;
+            height: 600px;
+            border: 1px solid #dddddd;
+        }
+
+        .contact-section {
+            padding: 28px;
+            background: #f7f9fc;
+            border: 1px solid #e5eaf0;
+            border-radius: 8px;
+        }
+
+        .contact-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            background: #f7f7f7;
+            border-top: 1px solid #e5e5e5;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 6px;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 700px) {
+            header,
+            .header-container {
+                min-height: 0;
+            }
+
+            .header-container {
+                flex-direction: column;
+                padding: 10px 16px 14px;
+                gap: 8px;
+            }
+
+            .logo img {
+                width: 140px;
+                max-height: 48px;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 8px 16px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            main {
+                padding: 145px 18px 35px;
+            }
+
+            .hero {
+                padding-top: 20px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 19px;
+            }
+
+            .contact-section {
+                padding: 20px;
+            }
+
+            .map-wrapper iframe {
+                height: 320px;
+            }
+
+            .blog-wrapper iframe {
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            main {
+                padding-top: 165px;
+            }
+
+            nav {
+                gap: 6px 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <a class="logo" href="https://www.tsuglobal.com/" aria-label="Chartered Bus NYC website">
+            <img
+                src="https://www.tsuglobal.com/tsu%20logo%20ai.jpg"
+                alt="Chartered Bus NYC logo">
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#planning">Travel Planning</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <article>
+
+        <div class="hero" id="home">
+            <h1><a href="https://www.tsuglobal.com/">Bus Charter</a> in New York, NY: Planning Group Transportation</h1>
+
+            <p>
+                Planning group travel in New York takes coordination, a clear schedule,
+                and suitable transportation. Chartered Bus NYC helps you explore
+                transportation arrangements for student outings, weddings, proms,
+                sports events, and other group occasions. Start with your destination,
+                group size, and preferred schedule to discuss options for your journey.
+            </p>
+        </div>
+
+        <section>
+            <h2>Understanding Group Bus Transportation</h2>
+
+            <p>
+                New York City has schools, hotels, event venues, cultural attractions,
+                and business destinations across its five boroughs. When several
+                people need to travel together, coordinating individual vehicles can
+                add complexity to your plans. Organized
+                <a href="https://maps.app.goo.gl/2h5MN6cEdBjbPLuG7">bus transportation</a>
+                gives group organizers a way to plan shared pickup points, routes,
+                and travel schedules.
+            </p>
+
+            <p>
+                Before making a booking, identify your travel date, departure location,
+                destination, number of passengers, and whether you need a return trip.
+                Ask about available vehicles, passenger capacity, pricing, and booking
+                requirements before confirming your arrangements.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Transportation for Different Occasions</h2>
+
+            <h3>Field Trip Bus Transportation</h3>
+
+            <p>
+                Schools and educational organizations may arrange trips to museums,
+                universities, cultural attractions, and educational events. Plan your
+                itinerary in advance, share pickup details with participants, and
+                confirm departure and return times with your transportation provider.
+            </p>
+
+            <h3>Wedding and Event Transportation</h3>
+
+            <p>
+                Wedding guests may need to travel between hotels, ceremony locations,
+                and reception venues. Coordinating group transportation can help
+                organizers communicate travel details and plan around the event schedule.
+                Confirm each stop and its timing before the event.
+            </p>
+
+            <h3>Prom and Special Events</h3>
+
+            <p>
+                Proms, celebrations, and other special occasions require careful
+                scheduling. Discuss pickup and drop-off locations, passenger numbers,
+                travel times, and available options to help your group prepare.
+            </p>
+
+            <h3>Sports Team Transportation</h3>
+
+            <p>
+                Sports teams and supporters may need transportation to games,
+                tournaments, and other events. When discussing your trip, share
+                your itinerary, passenger count, equipment needs, and any timing
+                requirements.
+            </p>
+        </section>
+
+        <section>
+            <h2>What to Consider When Choosing a Chartered Bus</h2>
+
+            <p>
+                Every group has different travel requirements. Review these details
+                before choosing a transportation arrangement:
+            </p>
+
+            <ul>
+                <li><strong>Group size:</strong> Estimate how many passengers will travel.</li>
+                <li><strong>Route:</strong> List your pickup points, stops, and destination.</li>
+                <li><strong>Schedule:</strong> Confirm departure, arrival, and return times.</li>
+                <li><strong>Vehicle options:</strong> Ask which vehicles are available for your group.</li>
+                <li><strong>Pricing:</strong> Request a quote based on your itinerary and requirements.</li>
+                <li><strong>Booking details:</strong> Review availability, terms, and any additional charges.</li>
+            </ul>
+
+            <p>
+                Clear information helps you compare options and understand what your
+                planned journey requires. Always confirm the details directly before
+                finalizing a reservation.
+            </p>
+        </section>
+
+        <section id="planning">
+            <h2>Planning Local and Interstate Trips</h2>
+
+            <p>
+                Your group may travel within New York City or plan a longer journey
+                beyond the city. For local travel, consider traffic, pickup locations,
+                scheduled stops, and event timing. For interstate trips, discuss the
+                complete route, expected travel duration, departure schedule, and
+                return arrangements in advance.
+            </p>
+
+            <p>
+                Chartered Bus NYC is based at 3 Lexington Ave #783, New York, NY 10065.
+                Share your travel requirements to ask about service availability and
+                suitable arrangements for your group.
+            </p>
+        </section>
+
+        <section>
+            <h2>Watch Our Video</h2>
+
+            <p>
+                Watch the video below for additional context, then consider your
+                group's itinerary and the transportation arrangements you need.
+            </p>
+
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/0-w_2ocjKw0?si=MicuZRjjB2XO5wij"
+                    title="Chartered Bus NYC video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Find Chartered Bus NYC on the Map</h2>
+
+            <p>
+                Use the map below to view the business location in New York, NY.
+                Contact the business to confirm your travel requirements and
+                discuss booking options.
+            </p>
+
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1258.8814070163457!2d-73.98614268124523!3d40.73770638533435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259f63aa05639%3A0xdd065b07d625fb39!2sChartered%20Bus%20NYC!5e0!3m2!1sen!2s!4v1792824617647!5m2!1sen!2s"
+                    title="Chartered Bus NYC location map"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Explore More Information</h2>
+
+            <p>
+                Visit the embedded page below to explore additional information
+                provided through the Chartered Bus NYC blog.
+            </p>
+
+            <div class="blog-wrapper">
+                <iframe
+                    src="https://charteredvusnyc.blogspot.com/p/home.html"
+                    title="Chartered Bus NYC blog"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Chartered Bus NYC</h2>
+
+            <p>
+                Ready to organize group travel in New York? Contact Chartered Bus NYC
+                to discuss your itinerary, passenger count, dates, and transportation
+                requirements. Ask about availability and pricing before confirming
+                your booking.
+            </p>
+
+            <p><strong>Business Name:</strong> Chartered Bus NYC</p>
+
+            <p>
+                <strong>Address:</strong>
+                3 Lexington Ave #783, New York, NY 10065
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:+13475279953">347-527-9953</a>
+            </p>
+
+            <p>
+                <strong>Website:</strong>
+                <a href="https://www.tsuglobal.com/">https://www.tsuglobal.com/</a>
+            </p>
+
+            <p>
+                Tell us about your destination and travel plans so you can discuss
+                the next steps for your group.
+            </p>
+        </section>
+
+        <section>
+            <h2>Start Planning Your Group Journey</h2>
+
+            <p>
+                A well-organized trip starts with a clear itinerary and confirmed
+                transportation details. Plan your route, estimate your passenger
+                count, and contact Chartered Bus NYC to discuss your needs.
+            </p>
+
+            <p>
+                <strong>
+                    Where does your group need to go next, and are you ready to
+                    discuss your bus charter requirements with Chartered Bus NYC?
+                </strong>
+            </p>
+        </section>
+
+    </article>
+</main>
+
+<footer>
+    <p><strong>Chartered Bus NYC</strong></p>
+    <p>3 Lexington Ave #783, New York, NY 10065</p>
+    <p>Phone: <a href="tel:+13475279953">347-527-9953</a></p>
+    <p>
+        <a href="https://www.tsuglobal.com/">Visit Website</a>
+    </p>
+    <p>&copy; 2026 Chartered Bus NYC. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
